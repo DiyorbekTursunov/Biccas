@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
 import PaymantItems from './paymantItems'
-import { dataMonthly, dataYearly } from '../CadsData/data'
 
 const PaymentSection = () => {
     const [isSelected, setisSelected] = useState(true)
-    const [data, setdata] = useState(dataYearly)
     return (
         <section className='max-w-[1220px] mx-auto mb-[8.12rem]'>
-            {/* <div className='blur'></div> */}
             <h2 className='text-[#191A15] text-[3.125rem] font-bold text-center mb-[2.5rem]'>Choose Plan <br /> That’s Right For You</h2>
             <p className='text-center text-[1.125rem] text-[#A6A6A6] mb-[2.5rem]'>Choose plan that works best for you, feel free to contact us</p>
             <div className='w-full flex justify-center mb-[4.19rem]'>
@@ -17,7 +14,7 @@ const PaymentSection = () => {
                 </div>
             </div>
             <div className='flex justify-between items-center'>
-                    <PaymantItems />
+                <PaymantItems />
             </div>
         </section>
     )
